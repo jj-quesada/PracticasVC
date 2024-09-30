@@ -30,9 +30,11 @@ Debido a la robustez y reusabilidad del bucle que aplicamos en la generación de
 En esta tarea se nos pide que modifiquemos uno de lso planos de la imagen capturada por la webcam. En nuestro caso, optamos por modificar dos planos: el rojo y el verde.
 
 - Al plano rojo se le ha aplicado un patrón de cuadrícula.
+
 ![Patrón de cuadrícula sobre el plano rojo](image-2.png)
 
 - Al plano verde se le ha aplicado un patrón de puntos.
+
 ![Patrón de puntos sobre el plano verde](image-3.png)
 
 ## Pintar círculos en las posiciones del píxel más claro y oscuro de la imagen
