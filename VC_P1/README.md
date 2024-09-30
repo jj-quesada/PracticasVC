@@ -4,6 +4,8 @@ En esta primera práctica hemos realizado una toma de contacto con las librería
 
 Con OpenCV hemos comprobado que pueden realizarse tareas similares con formas geométricas y primitivas gráficas como las generadas con Numpy, aunque el principal atractivo y aplicación de esta librería se ha centrado en el tratamiento de imágenes y de la entrada de video por webcam.
 
+No es necesaria ninguna instalación de paquetes adicionales para la ejecución de las celdas de esta práctica.
+
 # Descripción de las tareas planteadas
 
 ## Tablero de ajedrez
