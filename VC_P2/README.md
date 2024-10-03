@@ -3,7 +3,7 @@
 Esta segunda práctica se centra en la detección de contornos de una imagen, así como el análisis de la distribución de píxeles claros y oscuros para determinar la disposición de las zonas claras y oscuras de la imagen.
 Para ello, se destacan las técnicas de:
 
-- Métodos de Canny y Sobel, y aplicación de umbrales a imágenes B/N (simple y Otsu) para detectar bordes.
+- Métodos de Canny y Sobel, y aplicación de umbrales a imágenes B/N para detectar bordes.
 - Generación de histogramas sobre la distribución del brillo de los bordes con respecto a filas o columnas de la imagen, con el objetivo de identificar regiones claras y oscuras.
 
 ## Autores
@@ -12,8 +12,10 @@ Para ello, se destacan las técnicas de:
 - Juan José Quesada Acosta
 
 ## Requisitos
+
 - Descargar Python version 3 en adelante
 - Recomendado tener Anaconda para entornos aislados de python
+
 ## Tareas
 
 ### Conteo de píxeles blancos por fila y generación del histograma para el resultado de aplicar Canny a la imagen B/N del mandril
