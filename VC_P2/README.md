@@ -37,15 +37,19 @@ En esta tarea hemos aplicado un sencillo bucle para obtener valor máximo y una 
 ### Estudio por filas y columnas a la imagen generada de aplicar Sobel
 
 Primero aplicamos umbralizado.
+
 ![alt text](./Assets/image-2.png)
 
 Hacemos conteo por columnas.
+
 ![alt text](./Assets/image-3.png)
 
 Luego hacemos el conteo por filas.
+
 ![alt text](./Assets/image-4.png)
 
 Identificación del máximo por filas y columnas, y aquellas que superan el 95% de dicho máximo.
+
 ![alt text](./Assets/image-5.png)
 
 #### Marcado con primitivas de máximos en ambas imágenes
