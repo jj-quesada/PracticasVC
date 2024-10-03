@@ -28,11 +28,15 @@ row_counts = cv2.reduce(canny, 1, cv2.REDUCE_SUM, dtype=cv2.CV_32SC1)
 
 ![alt text](./Assets/image.png)
 
+---
+
 ### Identificación del valor máximo en filas y columnas, así como aquellas filas o columnas que contengan, al menos, un píxel con valor mayor o igual al 95% del máximo global
 
 En esta tarea hemos aplicado un sencillo bucle para obtener valor máximo y una lista de aquellas filas y columnas que superen dicho umbral.
 
 ![alt text](./Assets/image-1.png)
+
+---
 
 ### Estudio por filas y columnas a la imagen generada de aplicar Sobel
 
@@ -52,7 +56,7 @@ Identificación del máximo por filas y columnas, y aquellas que superan el 95% 
 
 ![alt text](./Assets/image-5.png)
 
-#### Marcado con primitivas de máximos en ambas imágenes
+#### Marcado con primitivas las columnas y filas que superan el umbral en ambas imágenes
 
 - Canny
 
@@ -61,6 +65,8 @@ Identificación del máximo por filas y columnas, y aquellas que superan el 95% 
 - Sobel
 
 ![alt text](./Assets/image-7.png)
+
+---
 
 ### Exhibición de lo aprendido con webcam
 
@@ -81,6 +87,8 @@ Cambio de efecto de video usando el espacio o el click izquierdo sobre la ventan
 #### Píxeles más claro y oscuro
 
 ![alt text](./Assets/Demo4.png)
+
+---
 
 ### Demo Inspirada en Proyectos Sugeridos
 
