@@ -78,4 +78,13 @@ Cambio de efecto de video usando el espacio o el click izquierdo sobre la ventan
 
 ### Demo Inspirada en Proyectos Sugeridos
 
-En esta demo se pretende 
+En esta demo se pretende detectar un rango de azules correspondientes con el color de unos guantes de cocina de latex comunes y aplicar una mascara a forma de chroma para reproducir un video sobre estas zonas.
+
+Se reproduce en el lado izquierdo de la ventana una imagen con detección de área y resaltado de máscara y en el lado derecho el resultado final.
+
+![alt text](./Assets/ranaespacial1.png)
+
+Posteriormente se le añadió una detección de contornos y filtrado por formas para cambiar el video de fondo en función de si parecía o no un triángulo del color de la máscara en la escena.
+
+![alt text](./Assets/ranaespacial2.png)
+
