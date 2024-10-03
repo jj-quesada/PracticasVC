@@ -57,3 +57,25 @@ Identificación del máximo por filas y columnas, y aquellas que superan el 95% 
 ![alt text](./Assets/image-7.png)
 
 ### Exhibición de lo aprendido con webcam
+
+Cambio de efecto de video usando el espacio o el click izquierdo sobre la ventana.
+
+#### Sin Efecto
+
+![alt text](./Assets/Demo1.png)
+
+#### Contornos
+
+![alt text](./Assets/Demo2.png)
+
+#### Diferencia de frames
+
+![alt text](./Assets/Demo3.png)
+
+#### Píxeles más claro y oscuro
+
+![alt text](./Assets/Demo4.png)
+
+### Demo Inspirada en Proyectos Sugeridos
+
+En esta demo se pretende 
