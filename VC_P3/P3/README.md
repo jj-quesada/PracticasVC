@@ -16,8 +16,31 @@ pip install scikit-learn seaborn
 
 ### 3.1. Detector de monedas
 
-(Óscar)
+En esta tarea hemos desarrollado un contador de dinero a partir de una imagen con monedas dispersas a partir de la selección de una moneda de 1 euro como medida comparativa, se selecciona la moneda haciendo click izquierdo sobre ella.
 
+A partir de la imagen original, se detectan los contornos principales con Canny introduciendo como input una imagen en escala de grises con un blur Gaussiano.
+
+![Imagen de bordes canny](./Assets/README%20Images/canny_output.png)
+
+Se prosigue con el umbralizado de Otsu al que se le substrae el valor obtenido en Canny para hacer un resalte exagerado de los bordes.
+
+![Imagen de OTSU menos bordes canny](./Assets/README%20Images/monedas_diff.png)
+
+Finalmente esta imagen se procesa para la obtención de los bordes circulares externos de las monedas
+
+![Imagen de discriminación de los circulos de las monedas](./Assets/README%20Images/contours_money.png)
+
+Una vez ya está detectadas todos los posibles contornos se procede con el conteo de dinero.
+
+Al hacer click sobre la moneda de 1 Euro se divide el diámetro real entre el diámetro de la imagen y se obtiene un factor de escala que se usará más adelante.
+
+Previamente se han generado dos diccionarios, uno para los diametros reales de cada moneda y otro para el dinero total contado. 
+
+Se prosigue detectando los contornos activos y preguntando si es una moneda con la función isCoin que comprueba en la imagen anterior si sus pixeles son blancos, en caso afirmativo se multiplica su diámetro en la imagen por el factor de escala para obtener su diámetro real equivalente y se agrupa en el intervalo marcado por el umbral de tolerancia de los diametros de las monedas correspondientes, esto añade una moneda de esta clase al contador del diccionario de totales.
+
+Se prosigue con el conteo hasta que finalmente no queden contornos, sumando la cantidad de cada moneda por su valor y printeando los resultados.
+
+![Resultado de conteo de dinero](./Assets/README%20Images/results_money.png)
 
 ### 3.2. Clasificador de microplásticos
 
