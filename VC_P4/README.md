@@ -36,8 +36,15 @@ fotograma, tipo_objeto, confianza, identificador_tracking, x1, y1, x2, y2, matr�
 ## Paquetes a instalar
 
 ```
-pip install toooodoslospaquetes
+conda create --name VC_P4 python=3.9.5
+conda activate VC_P4
+pip install ultralytics
+pip install lapx
+conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=12.4 -c pytorch -c conda-forge
+pip install pytesseract
 ```
+
+*Hemos usado también el toolkit de CUDA y cuDNN para el entrenamiento de nuestro detector de matrículas, corriendo en una RTX 3060 Laptop con 6GB VRAM.
 
 ## Entrenando nuestro propio detector de matrículas
 
@@ -109,7 +116,7 @@ En cuanto a la lectura de matrícula, pensamos que podríamos haber conseguido u
 
 Hemos subido otros vídeos de cosecha propia, donde para uno de ellos se generó un vídeo con la detección a tiempo real y que incluimos como GIF a continuación (video original también incluido en el repo *detection_results_coches.mp4*).
 
-![detection-results-coches](detection_results_coches.gif)
+![detection-results-coches](https://github.com/jj-quesada/PracticasVC/blob/main/VC_P4/detection_result_coches.gif)
 
 También incluimos otro vídeo con el que hicimos pruebas a tiempo real más rápido, cuyo nombre es *capri.mp4* y del que pudimos extrar una matrícula clara y casi en estático para verificar que efectivamente el desempeño de los OCRs para este tipo de tareas es muy malo.
 
