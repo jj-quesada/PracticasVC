@@ -7,7 +7,9 @@
 [Análisis facial](#análisis-facial)  
 [Tarea](#tarea)
 
+![hat](./hat.png)
 
+![ruff](./ruff.png)
 ### Detección de caras
 
 Para esta práctica he preparado varios demostradores de detectores faciales. El primero de ellos, [*VC_P5_detectores.ipynb*](VC_P5_detectores.ipynb), integra cuatro variantes que buscan el rostro mayor de la imagen intentando localizar sus ojos para aplicar en su caso una normalización de tamaño y orientación:
